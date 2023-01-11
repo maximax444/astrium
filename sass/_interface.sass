@@ -1,0 +1,365 @@
+.container
+    width: 1440px
+    padding: 0 30px
+    margin: auto
+@media (max-width: 1399px)
+    .container
+        width: 100%
+        margin: auto
+        padding: 0 2.08vw
+section
+    overflow: hidden
+.main
+    padding-top: 100px
+    padding-bottom: 62px
+    padding-left: 30px
+    overflow: hidden
+    &__wrap
+        display: flex
+    &__img
+        width: calc(900px + (100% - 1440px) /2)
+        height: 580px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__cont
+        width: calc(100% - 900px - (100% - 1440px) /2)
+        background: #EEEDED
+    &__main
+        width: 500px
+        padding: 0 50px
+        padding-bottom: 140px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        height: 100%
+        text-align: center
+    &__text
+        font-size: 23px
+        line-height: 28px
+        text-align: center
+        text-transform: uppercase
+        color: #0D1311
+        padding-top: 125px
+        margin: 0
+    &__title
+        font-family: 'Garamond'
+        font-weight: 400
+        font-size: 80px
+        line-height: 93px
+        text-transform: uppercase
+        color: #7B7B7B
+        margin: 0
+    &__nums
+        display: flex
+        justify-content: center
+        line-height: 93px
+        position: relative
+        top: -30px
+        span
+            font-size: 250px
+            text-transform: uppercase
+            color: #7B7B7B
+            &:nth-child(1)
+                transform: scale(4) translateX(16.66667vw)
+                transition: -webkit-transform 1.3s 1.3s,transform 1.3s 1.3s,opacity .8s .4s
+            &:nth-child(2)
+                transform: scale(4) translateX(17.85714vw)
+                transition: -webkit-transform 1.3s 1.7s,transform 1.3s 1.7s,opacity .8s .7s
+        &.animate
+            span
+                &:nth-child(1)
+                    transform: scale(1) translateX(0)
+                &:nth-child(2)
+                    transform: scale(1) translateX(0)
+
+.footer
+    padding-top: 35px
+    padding-bottom: 31px
+    &__wrap
+        padding-left: 30px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__address
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #0D1311
+        a
+            display: block
+            font-size: 18px
+            line-height: 22px
+            color: #0D1311
+            text-decoration: none
+    &__bukl
+        a
+            font-size: 18px
+            line-height: 22px
+            text-decoration-line: underline
+            color: rgba(13, 19, 17, 0.7)
+            &:hover
+                color: rgba(13, 19, 17, 1)
+    &__links
+        a
+            display: block
+            font-weight: 400
+            font-size: 18px
+            line-height: 22px
+            text-decoration-line: underline
+            color: rgba(13, 19, 17, 0.7)
+            padding: 3px 0
+            &:hover
+                color: rgba(13, 19, 17, 1)
+    &__dev
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+            font-size: 18px
+            line-height: 22px
+            color: rgba(13, 19, 17, 0.7)
+            img
+                max-width: 100px
+            &:nth-child(2)
+                grid-gap: 3px
+                img
+                    position: relative
+                    top: -3px
+.header
+    padding: 54px 0
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 6
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__phone
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #0D1311
+        text-decoration: none
+    &__buk
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        text-decoration-line: underline
+        color: rgba(13, 19, 17, 0.7)
+        &:hover
+            color: rgba(13, 19, 17, 1)
+    &__col
+        display: flex
+        align-items: center
+        grid-gap: 40px
+        width: 30%
+        &:last-child
+            justify-content: flex-end
+    &__logo
+    &__burg
+        span
+            display: block
+            width: 60px
+            height: 14px
+            position: relative
+            &::before
+                width: 100%
+                height: 2px
+                background-color: #000
+                content: ""
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+            &::after
+                width: 100%
+                height: 2px
+                background-color: #000
+                content: ""
+                display: block
+                position: absolute
+                bottom: 0
+                left: 0
+    &2
+        height: 132px
+        margin-top: 132px
+        z-index: 5
+        background-color: #fff
+        position: sticky
+        top: 0
+        display: flex
+        justify-content: center
+        align-items: center
+.menu
+    position: fixed
+    top: 0
+    left: -50vw
+    height: 100vh
+    width: 50vw
+    background-color: #fff
+    z-index: 20
+    transition: all 0.3s
+    padding: 75px 30px
+    overflow: hidden
+    &.active
+        left: 0
+    &__list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        a
+            display: block
+            font-family: 'Garamond'
+            font-style: normal
+            font-weight: 400
+            font-size: 60px
+            line-height: 66px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #0D1311
+            text-decoration: none
+            margin-bottom: 56px
+    &__bot
+        width: calc(100% - 60px)
+        position: absolute
+        left: 30px
+        bottom: 70px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__team
+        font-weight: 400
+        font-size: 23px
+        line-height: 28px
+        text-transform: uppercase
+        color: rgba(13, 19, 17, 0.7)
+        text-decoration: none
+        &:hover
+            color: rgba(13, 19, 17, 1)
+    &__buk
+        font-weight: 400
+        font-size: 23px
+        line-height: 28px
+        text-decoration-line: underline
+        text-transform: uppercase
+        color: rgba(13, 19, 17, 0.7)
+        &:hover
+            color: rgba(13, 19, 17, 1)
+    &-close
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        left: 0
+        background-color: rgba(#000, 0.5)
+        z-index: 19
+        pointer-events: none
+        opacity: 0
+        transition: all 0.3s
+        &.active
+            pointer-events: auto
+            opacity: 1
+@media(max-width: 1399px)
+    .footer
+        &__wrap
+            flex-wrap: wrap
+            grid-gap: 15px 20px
+    .main
+        &__img
+            width: 50%
+        &__cont
+            width: 50%
+        &__main
+            width: 400px
+            padding-left: 20px
+            padding-right: 20px
+@media(max-width: 991px)
+    .footer
+        &__dev
+            order: 10
+    .header
+        &__buk
+            display: none
+    .menu
+        width: 70vw
+        left: -70vw
+@media(max-width: 767px)
+    .menu
+        width: 100vw
+        left: -100vw
+        height: calc(100vh - 88px)
+        top: 88px
+        &-close
+            display: none
+            &.active
+                display: none
+    .main
+        padding: 20px
+        &__wrap
+            display: block
+        &__img, &__cont
+            width: 100%
+        &__main
+            width: 100%
+            padding-bottom: 40px
+        &__text
+            padding-top: 40px
+        &__nums
+            span
+                &:nth-child(1)
+                    transform: scale(4) translateX(57.85714vw)
+                &:nth-child(2)
+                    transform: scale(4) translateX(57.85714vw)
+    .header
+        padding: 35px 0
+        &__phone
+            display: none
+        &2
+            height: 88px
+            margin-top: 0
+            padding-left: 20px
+            justify-content: flex-start
+        &__logo
+            width: 160px
+            img
+                width: 100%
+@media(max-width: 575px)
+    .menu
+        padding: 20px
+        &__list
+            a
+                font-size: 35px
+                line-height: 38px
+                letter-spacing: 0.05em
+                margin-bottom: 30px
+        &__team
+            font-size: 14px
+            line-height: 17px
+        &__buk
+            font-size: 14px
+            line-height: 17px
+        &__bot
+            bottom: 20px
+    .main
+        &__img
+            height: 360px
+        &__text
+            font-size: 20px
+            line-height: 24px
+        &__title
+            font-size: 65px
+            line-height: 93px
+    .footer
+        padding: 20px 0
+        &__wrap
+            padding-left: 0
+            padding-right: 0
+            grid-gap: 10px
+        &__address
+            margin-bottom: 10px
+        &__dev
+            margin-top: 20px

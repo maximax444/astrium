@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRVM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__col">
+                    <a href="tel:+78123250000" class="header__phone">+78123250000</a>
+                </div>
+
+                <div class="header__col">
+                    <a href="" class="header__buk">скачать буклет</a>
+                    <a href="" class="header__burg">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header2">
+        <a href="#" class="header__logo animate__animated animate__fadeInUpBig">
+            <img src="img/logo.svg" alt="">
+        </a>
+    </div>
+    <div class="menu-close"></div>
+    <div class="menu">
+
+        <ul class="menu__list">
+            <li><a href="#arh">архитектура</a></li>
+            <li><a href="#loc">локация</a></li>
+            <li><a href="#places">резиденции</a></li>
+            <li><a href="#pent">пентхаусы</a></li>
+        </ul>
+        <div class="menu__bot">
+            <a href="#team" class="menu__team">команда</a>
+            <a href="" class="menu__buk" download>скачать буклет</a>
+        </div>
+    </div>
+    <div class="gallery fashionhouse" id="fashionhouse"
+        style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+        <div class="gallery__num">
+            <span class="gallery__currentnum">01</span> / <span class="gallery__totaltnum">06</span>
+        </div>
+        <div class="gallery__nav">
+            <div class="gallery__arrow gallery__arrow_left"></div>
+            <div class="gallery__navlines"><span
+                    class="active"></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="gallery__arrow gallery__arrow_right"></div>
+        </div>
+        <div class="gallery__content scrollme" data-action="translateY" data-max="0.2" data-direction="-" data-k="0.15">
+            <div class="gallery__row" style="width: 600vw;">
+                <div class="gallery__slide fashionhouse__slide1 appearanim appearanim2 active animate">
+                    <div class="gallery__title">
+                        Модный дом<br>Armani </div>
+                    <div class="gallery__img">
+                        <div class="gallery__imganim">
+                            <img src="/upload/iblock/b0f/q6rru5zaxn92z69j194aqqs06gd4h8io/1.jpg" class="animateme"
+                                data-when="span" data-from="1" data-to="0" data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                            <img src="/upload/iblock/8be/f15drtckkjs8b18k6yigjssjpn0kdxmz/1.jpg"
+                                class="mobile animateme" data-when="span" data-from="1" data-to="0"
+                                data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                        </div>
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__textin">
+                            Дом моды Armani был создан Джорджо Армани более 40 лет назад в Милане и за время своего
+                            существования стал синонимом элегантности, изысканности и комфорта во всем мире. </div>
+                    </div>
+                </div>
+                <div class="gallery__slide fashionhouse__slide2" data-nav="dark" data-num="dark">
+                    <div class="gallery__title">
+                        МИР Armani </div>
+                    <div class="gallery__img fashionhouse__slide2-img1">
+                        <div class="gallery__imganim">
+                            <img src="/upload/iblock/251/81god60jgs35qy097wcoorkvcle896zu/2.jpg" class="animateme"
+                                data-when="span" data-from="1" data-to="0" data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                        </div>
+                    </div>
+                    <div class="gallery__img fashionhouse__slide2-img2">
+                        <img src="/img/fashionhouse/3.jpg">
+                    </div>
+                    <div class="gallery__text gallery__text_dark">
+                        <div class="gallery__textin">
+                            Творческий подход Джорджо Армани охватывает различные сферы, предлагая особый образ жизни в
+                            стиле Armani: от цветочных композиций для дома до ресторанов, баров и клубов в самых
+                            престижных локациях мира, а также сеть Armani Hotels &amp; Resorts. </div>
+                    </div>
+                </div>
+                <div class="gallery__slide fashionhouse__slide3">
+                    <div class="gallery__title">
+                        Armani/casa </div>
+                    <div class="gallery__img">
+                        <div class="gallery__imganim">
+                            <img src="/upload/iblock/667/79a3ecilbqq6vr8eqm60f5th7w0vuwlo/4.jpg" class="animateme"
+                                data-when="span" data-from="1" data-to="0" data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                        </div>
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__textin">
+                            Отметивший свое 20-летие, бренд Armani/Casa является мировым лидером в сегменте роскошной
+                            мебели. Это олицетворение элегантности и стиля воплощает мечту Джорджо Армани о гармоничном,
+                            комфортном и изысканном доме, приносящем удовольствие. </div>
+                    </div>
+                </div>
+                <div class="gallery__slide fashionhouse__slide4">
+                    <div class="gallery__title">
+                        Студия дизайна интерьеров<br>Armani/Casa </div>
+                    <div class="gallery__img">
+                        <div class="gallery__imganim">
+                            <img src="/upload/iblock/3c1/tiudoxt1hr5a606jurr7fmmqr24w4hcv/5.jpg" class="animateme"
+                                data-when="span" data-from="1" data-to="0" data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                        </div>
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__textin">
+                            С 2004 года студия дизайна интерьеров Armani/Casa под непосредственным художественным
+                            руководством Джорджо Армани создает индивидуальные проекты интерьеров для апартаментов в
+                            самых эксклюзивных локациях по всему миру, а также для частных яхт и самолетов. </div>
+                    </div>
+                </div>
+                <div class="gallery__slide fashionhouse__slide5">
+                    <div class="gallery__title">
+                        Резиденции<br>Armani / Casa в мире </div>
+                    <div class="gallery__img">
+                        <div class="gallery__imganim">
+                            <img src="/upload/iblock/f2f/n13xxa882lbds8cgtosh2eglowe9fplc/6.jpg" class="animateme"
+                                data-when="span" data-from="1" data-to="0" data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                        </div>
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__textin">
+                            Гармонично спроектированное пространство и изысканная мебель, чистые линии и необычные
+                            натуральные материалы, спокойная цветовая гамма и богатые фактуры делают проекты под брендом
+                            Armani/Casa желанными во всем мире. </div>
+                    </div>
+                </div>
+                <div class="gallery__slide fashionhouse__slide6" data-nav="dark">
+                    <div class="gallery__title gallery__title_dark">
+                        Резиденции<br>Armani / Casa в Москве </div>
+                    <div class="gallery__img">
+                        <div class="gallery__imganim">
+                            <img src="/upload/iblock/fe1/yt3bdhl32lf9b73ia6ohask7oaryq2ww/7.jpg" class="animateme"
+                                data-when="span" data-from="1" data-to="0" data-translatey="100"
+                                style="opacity: 1; transform: translate3d(0px, 14px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+                        </div>
+                    </div>
+                    <div class="gallery__text gallery__text_dark">
+                        <div class="gallery__textin">
+                            Резиденции Armani/Casa в Москве станут воплощением стиля и эстетики итальянского модного
+                            дома. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <div class="main__wrap">
+            <div class="main__img">
+                <img src="img/main.jpg" alt="">
+            </div>
+            <div class="main__cont">
+                <div class="main__main">
+                    <h1 class="main__title">
+                        <div class="main__nums">
+                            <span>6</span><span>0</span>
+                        </div>
+                        лотов
+                    </h1>
+                    <p class="main__text">дом под звездным небосводом. <br> роскошная коллекция класса de luxe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last">
+        <div class="container">
+            <div class="last__title">Один из последних строящихся домов на&nbsp;Крестовском острове
+                в&nbsp;его&nbsp;приватной части
+            </div>
+            <div class="last__mob">
+                <img src="img/last-mob.jpg" alt="">
+            </div>
+            <div class="last__wrap">
+                <div class="last__block">эксклюзивные планировочные решения</div>
+                <div class="last__block">дизайнерский <br> паркинг</div>
+                <div class="last__block">передовая <br> инженерия</div>
+                <div class="last__block">закрытый двор-сад <br> без автомобилей</div>
+            </div>
+            <div class="last__photos">
+                <div class="last__small">
+                    <img src="img/last1.jpg" alt="">
+                </div>
+                <div class="last__big">
+                    <img src="img/last2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="arh" id="arh">
+        <div class="container">
+            <h2 class="arh__title">архитектура</h2>
+            <div class="arh-top">
+                <p class="arh-top__text">
+                    Основной идеей архитектурных решений фасадов является комбинация неоклассических приемов с
+                    современными элементами: панорамное остекление, анодированный металл в сочетании со стеклом и литыми
+                    элементами пилястр.
+                </p>
+                <div class="arh-top__img"><img src="img/arh1.jpg" alt=""></div>
+            </div>
+            <div class="arh-main">
+                <div class="arh-main__vert">
+                    <img src="img/arh2.jpg" alt="">
+                </div>
+                <p class="arh-main__text">
+                    Угловые металлические элементы между окнами поддержаны ритмом ограждений балконов и&nbsp;козырьком
+                    въездной арки, классические карнизы — элегантными пилястрами. <br> В отделке фасада используется
+                    гранит и&nbsp;натуральный камень.
+                </p>
+                <div class="arh-main__img">
+                    <img src="img/arh3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="loc" id="loc">
+        <div class="container">
+            <h2 class="loc__title">Локация</h2>
+            <p class="loc__subtitle">ASTRVM расположился в&nbsp;приватной части острова, вдали от потоков людей
+                и&nbsp;машин.
+            </p>
+            <div class="loc__map">
+                <img src="img/loc.jpg" alt="">
+            </div>
+            <div class="loc__bot">
+                <p class="loc__text">Все условия для современного здорового распорядка жизни – занятий спортом взрослых
+                    и детей, пробежек и&nbsp;велопрогулок вдоль берега и&nbsp;среди зелени парков.</p>
+                <div class="loc__img"><img src="img/loc-bot.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="places" id="places">
+        <div class="container">
+            <h2 class="places__title">Резиденции</h2>
+            <div class="places__main">
+                <div class="places__img">
+                    <img src="img/places-main.jpg" alt="">
+                    <div class="places__img-num">54</div>
+                </div>
+                <div class="places__cont">
+                    <div class="places__line">Потолки от 3.15-3.3 м</div>
+                    <div class="places__line">площадь от 127 до 294 м2</div>
+                    <p class="places__text">В резиденциях созданы эксклюзивные планировочные решения, вдохновленные
+                        идеей «перетекающего пространства».</p>
+                </div>
+            </div>
+            <div class="places-wrap">
+                <p class="places-wrap__text">Каждая резиденция —<br> это стиль и функциональность<br> в одном флаконе
+                </p>
+                <div class="places-wrap__img">
+                    <img src="img/places-wrap.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="places-slider swiper-wrapper">
+                <a data-fancybox href="img/places1.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places1.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places2.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places2.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places2.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places2.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places2.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places2.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places3.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places3.jpg" alt="">
+                </a>
+            </div>
+            <div class="places__nav">
+                <div class="places__prev"><img src="img/places-prev.svg" alt=""></div>
+                <div class="swiper-pagination"></div>
+                <div class="places__next"><img src="img/places-next.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="pent" id="pent">
+        <div class="container">
+            <h2 class="pent__title">Пентхаусы</h2>
+            <div class="pent__main">
+                <div class="pent__cont">
+                    <div class="pent__line">Потолки от 3.15-3.3 м</div>
+                    <div class="pent__line">площадь от 136 до 413 м2</div>
+                </div>
+                <div class="pent__img">
+                    <img src="img/pent-main.jpg" alt="">
+                    <div class="pent__img-num"><span>6</span> лотов</div>
+                </div>
+            </div>
+            <div class="pent-wrap">
+                <div class="pent-wrap__img">
+                    <img src="img/pent-wrap.jpg" alt="">
+                </div>
+                <p class="pent-wrap__text">В архитектуре и дизайне интерьеров пентхаусов была реализована идея «вилл на
+                    крыше», имеющих персональное имя и уникальное пространственное решение,<br> а по структуре
+                    напоминающих
+                    современные роскошные средиземноморские виллы.
+                </p>
+
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="places-slider swiper-wrapper">
+                <a data-fancybox href="img/places1.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places1.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places2.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places2.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places2.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places2.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places2.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places2.jpg" alt="">
+                </a>
+                <a data-fancybox href="img/places3.jpg" class="places-slider__img swiper-slide">
+                    <img src="img/places3.jpg" alt="">
+                </a>
+            </div>
+            <div class="places__nav pent__nav">
+                <div class="pent__prev"><img src="img/pent-prev.svg" alt=""></div>
+                <div class="swiper-pagination"></div>
+                <div class="pent__next"><img src="img/pent-next.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="otd">
+        <div class="container">
+            <h2 class="otd__title">отделка</h2>
+            <p class="otd__text">Резиденции и пентхаусы доступны с&nbsp;ОТДЕЛКой, дизайнерской МЕБЕЛЬю, продуманным
+                освещением И&nbsp;АКСЕССУАРами, а также без отделки для создания индивидуального дизайна.</p>
+            <div class="otd__wrap">
+                <div class="otd__col">
+                    <div class="otd__img">
+                        <img src="img/otd1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="otd__col">
+                    <div class="otd__double">
+                        <div class="otd__vert">
+                            <img src="img/otd2.jpg" alt="">
+                        </div>
+                        <div class="otd__big">
+                            <img src="img/otd3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="otd__small">
+                        <img src="img/otd4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="materials">
+        <div class="container">
+            <h2 class="materials__title">материалы</h2>
+            <p class="materials__descr">В отделке использованы стильные, износостойкие, натуральные материалы</p>
+            <div class="materials__wrap">
+                <div class="materials__block">
+                    <div class="materials__img">
+                        <img src="img/mat1.png" alt="">
+                    </div>
+                    <div class="materials__name">белый <br> мрамор</div>
+                </div>
+                <div class="materials__block">
+                    <div class="materials__img">
+                        <img src="img/mat2.png" alt="">
+                    </div>
+                    <div class="materials__name">черный <br> мрамор</div>
+                </div>
+                <div class="materials__block">
+                    <div class="materials__img">
+                        <img src="img/mat3.png" alt="">
+                    </div>
+                    <div class="materials__name">натуральное дерево</div>
+                </div>
+                <div class="materials__block">
+                    <div class="materials__img">
+                        <img src="img/mat4.png" alt="">
+                    </div>
+                    <div class="materials__name">Анодированный металл</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inzh">
+        <div class="container">
+            <h2 class="inzh__title">Инженерия</h2>
+            <div class="inzh__wrap">
+                <div class="inzh__block animate__animated animate__fadeIn">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Система контроля протечки воды с автоматической блокировкой подачи</p>
+                </div>
+                <div class="inzh__block animate__animated animate__fadeIn animate__delay-05s	">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Многоступенчатая система очистки воды до высшей категории <br> качества
+                        питьевой
+                    </p>
+                </div>
+                <div class="inzh__block animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Фильтрация воздуха <br> фильтром тонкой очистки</p>
+                </div>
+                <div class="inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Бесшумные и безопасные лифты бренда <br> ThyssenKrupp Evolution</p>
+                </div>
+                <div class="inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Энергосберегающие, дерево&shy;алюминиевые австрийские окна бренда Internorm
+                    </p>
+                </div>
+                <div class="inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Системы противопожарной безопасности <br> с выводом сигнала <br> в
+                        диспетчерскую МЧС</p>
+                </div>
+                <div class="inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Индивидуальная приточно&shy;вытяжная система с&nbspкондиционированием</p>
+                </div>
+                <div class="inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">Система снеготаяния <br> для обслуживания террас <br> в зимнее время</p>
+                </div>
+                <div class="inzh__block">
+                    <div class="inzh__img">
+                        <img src="img/inzh.svg" alt="">
+                    </div>
+                    <p class="inzh__descr">WI-Fi в каждой точке комплекса<br> с усилителями в зонах SPA<br> и паркинга
+                    </p>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="inzh__prev"><img src="img/places-prev.svg" alt=""></div>
+                <div class="inzh__next"><img src="img/places-next.svg" alt=""></div>
+                <div class="inzh__slider swiper-wrapper">
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Система контроля протечки воды с автоматической блокировкой подачи</p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Многоступенчатая система очистки воды до высшей категории <br> качества
+                            питьевой
+                        </p>
+                    </div>
+                    <div class="swiper-slide inzh__block ">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Фильтрация воздуха <br> фильтром тонкой очистки</p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Бесшумные и безопасные лифты бренда <br> ThyssenKrupp Evolution</p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Энергосберегающие, дерево&shy;алюминиевые австрийские окна бренда
+                            Internorm
+                        </p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Системы противопожарной безопасности <br> с выводом сигнала <br> в
+                            диспетчерскую МЧС</p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Индивидуальная приточно&shy;вытяжная система с&nbspкондиционированием</p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">Система снеготаяния <br> для обслуживания террас <br> в зимнее время</p>
+                    </div>
+                    <div class="swiper-slide inzh__block">
+                        <div class="inzh__img">
+                            <img src="img/inzh.svg" alt="">
+                        </div>
+                        <p class="inzh__descr">WI-Fi в каждой точке комплекса<br> с усилителями в зонах SPA<br> и
+                            паркинга
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inzh__more"><a href="">узнать больше, скачать буклет</a></div>
+        </div>
+    </section>
+    <!-- <div class="swiper serv__all">
+        <div class="serv swiper-wrapper">
+            <div class="serv__slide swiper-slide"
+                style="background:url('/img/serv1.jpg') center no-repeat;background-size:cover;">
+                <div class="container">
+                    <div class="serv__wrap">
+                        <div class="serv__title">сервис</div>
+                    </div>
+                </div>
+            </div>
+            <div class="serv__slide swiper-slide"
+                style="background:url('/img/serv1.jpg') center no-repeat;background-size:cover;">
+                <div class="container">
+                    <div class="serv__wrap">
+                        <div class="serv__title">сервис2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="serv__slide swiper-slide"
+                style="background:url('/img/serv1.jpg') center no-repeat;background-size:cover;">
+                <div class="container">
+                    <div class="serv__wrap">
+                        <div class="serv__title">сервис3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="serv__slides">
+            <div class="serv__curr">01</div>
+            <div class="serv__all">/06</div>
+        </div>
+        <div class="places__nav pent__nav serv__nav">
+            <div class="serv__prev"><img src="img/pent-prev.svg" alt=""></div>
+            <div class="swiper-pagination"></div>
+            <div class="serv__next"><img src="img/pent-next.svg" alt=""></div>
+        </div>
+        <div class="places__nav pent__nav serv__nav">
+            <div class="serv__prev"><img src="img/pent-prev.svg" alt=""></div>
+            <div class="swiper-pagination"></div>
+            <div class="serv__next"><img src="img/pent-next.svg" alt=""></div>
+        </div>
+    </div> -->
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="team__title">Команда</h2>
+            <div class="team__main">
+                <div class="team__img">
+                    <img src="img/team.svg" alt="">
+                </div>
+                <div class="team__cont">
+                    <div class="team__subtitle">Yard Group </div>
+                    <div class="team__work">Девелопер</div>
+                    <div class="team__text">
+                        <p>YARD GROUP существует на рынке более 7 лет и&nbsp;специализируется на строительстве
+                            эксклюзивных
+                            проектов элитной недвижимости. В портфеле проектов компании реализованный апарт-отель
+                            бизнес-класса YARD RESIDENCE, реконструкция Конюшенного двора и&nbsp;строящиеся элитные
+                            комплексы
+                            ASTRVM и ZEN GARDEN.
+                        </p>
+                        <p>YARD GROUP создает новые высококачественные проекты, сохраняя градостроительные традиции
+                            Петербурга.</p>
+                        <p>Компания использует новейшие технологии, натуральные материалы и применяет лучшие мировые
+                            практики, которые делают дома по-настоящему роскошными. Внешний облик, индивидуальные
+                            планировки, интерьеры, благоустройство, инфраструктура – в каждом элементе проекта
+                            стремление к совершенству. YARD GROUP тщательно подходит к сервису и предоставляет
+                            высококлассные услуги, которые смогут удовлетворить самых искушенных клиентов.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team__quote">
+                <q>«Мы строим не просто недвижимость, <br> а дома, которые будут стареть красиво!»</q>
+                <div class="team__quote-bot">
+                    <div class="team__quote-autor">А. В. Кошкин - генеральный директор YARD GROUP</div>
+                </div>
+            </div>
+            <div class="team__wrap">
+                <div class="team-block">
+                    <div class="team-block__name">DBA-group</div>
+                    <div class="team-block__work">Архитектура фасадов</div>
+                    <div class="team-block__img">
+                        <img src="img/team1.jpg" alt="">
+                    </div>
+                    <div class="team-block__text">
+                        <p>DBA-GROUP – студия архитектуры и дизайна, основанная в 2003 году ее руководителем Владиславом
+                            Андреевым.</p>
+                        <p>Студия работает над проектами разного типа и масштаба — среди наших работ есть жилые и
+                            общественные здания, отели, интерьеры торгово-развлекательных центров, фитнес-клубов,
+                            спортивных комплексов, спа, банных комплексов, ресторанов, концертных и ночных клубов,
+                            баров, кафе, бутиков и магазинов, общественные пространства жилых комплексов, офисные
+                            интерьеры, образовательные центры, а также частные резиденции, апартаменты, пентхаусы и
+                            квартиры.</p>
+                        <p>На сегодняшний день студией успешно реализовано более 800 проектов в России и по всему миру.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-block">
+                    <div class="team-block__name">Hоtei-Russia / The Svetozar Andreev Architecture Studio</div>
+                    <div class="team-block__work">Дизайн, концепция пространств</div>
+                    <div class="team-block__img">
+                        <img src="img/team2.jpg" alt="">
+                    </div>
+                    <div class="team-block__text">
+                        <p>Студия Светозара Андреева — это международная проектная группа, основанная архитектором и
+                            дизайнером Светозаром Андреевым. Основное направление практики — создание ультрасовременных
+                            архитектурных проектов общественных комплексов и частных объектов в России и различных
+                            странах мира, интерьерный дизайн, разработка эксклюзивных предметов интерьера и мебели, а
+                            также создание фирменного стиля и концепций развития проектов.
+                        </p>
+                        <p>Светозар Андреев — автор ряда международных архитектурных проектов, получивших резонанс и
+                            широкое освещение в международной прессе.
+                            Работы Светозара Андреева регулярно публикуются ведущими мировыми изданиями, посвященными
+                            современной архитектуре и дизайну.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__address">
+                    г. Санкт-Петербург, <br> ул. Эсперова, д. 8, литера А
+                    <a href="tel:+78123250000">+78123250000</a>
+                </div>
+                <div class="footer__bukl"><a href="">скачать буклет</a></div>
+                <div class="footer__dev">
+                    <a href="">
+                        Дизайн сайта:
+                        <img src="img/footer-diz.png" alt="">
+                    </a>
+                    <a href="">
+                        Разработка сайта:
+                        <img src="img/hero-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__links">
+                    <a href="">политика конфиденциальности</a>
+                    <a href="">проектная декларация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" async="" id="topmailru-code" src="https://top-fwz1.mail.ru/js/code.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
